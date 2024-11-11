@@ -9,23 +9,23 @@ public class Temperatura {
     }
 
     public String Convercao(String unidadeOrigem, String unidadeDestino){
-        Double convercao;
+        Double conversao;
         if (unidadeOrigem.equalsIgnoreCase("c")){
             if (unidadeDestino.equalsIgnoreCase("f")) {
-             convercao = (this.temperatura * 9 / 5) + 32;
-            return String.format("Temperatura convertida %.2f F", convercao);
+             conversao = (this.temperatura * 9 / 5) + 32;
+            return String.format("Temperatura convertida %.2f F", conversao);
         }else if (unidadeDestino.equalsIgnoreCase("k")) {
-            convercao = this.temperatura + 273.15;
-            return String.format("Temperatura convertida %.2f K", convercao);
+            conversao = this.temperatura + 273.15;
+            return String.format("Temperatura convertida %.2f K", conversao);
         }else{
             return "Função invalida";
         }
         }else if(unidadeOrigem.equalsIgnoreCase("f")){
-            convercao = (this.temperatura - 32) * 5/9;
-            return String.format("Temperatura convertida %.2f C", convercao);
+            conversao = (this.temperatura - 32) * 5/9;
+            return String.format("Temperatura convertida %.2f C", conversao);
         }else if(unidadeOrigem.equalsIgnoreCase("k")){
-            convercao = this.temperatura - 273.15;
-            return String.format("Temperatura convertida %.2f C", convercao);
+            conversao = this.temperatura - 273.15;
+            return String.format("Temperatura convertida %.2f C", conversao);
         }else{
             return "Função invalida";
         }
