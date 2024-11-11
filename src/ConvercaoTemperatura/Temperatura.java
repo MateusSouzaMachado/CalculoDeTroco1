@@ -8,7 +8,7 @@ public class Temperatura {
         this.temperatura = temperatura;
     }
 
-    public String Convercao(String unidadeOrigem, String unidadeDestino){
+    public String Conversao(String unidadeOrigem, String unidadeDestino){
         Double conversao;
         if (unidadeOrigem.equalsIgnoreCase("c")){
             if (unidadeDestino.equalsIgnoreCase("f")) {
