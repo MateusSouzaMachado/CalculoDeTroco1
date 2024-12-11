@@ -6,8 +6,8 @@ public class Troco {
 
     private double valor;
 
-    public String calcularTroco(double valor){
-        this.valor = valor;
+    public String calcularTroco(double valorCompra,double valorEntregre){
+        this.valor =valorEntregre - valorCompra;
         List<String> listaDeNotas = new ArrayList<>();
 
         listaDeNotas.add("NOTAS:");
